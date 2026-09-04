@@ -324,15 +324,15 @@ https://github.com/user-attachments/assets/bb7f3174-b703-4c98-a23c-e6bb4abba390
 > <img width="640" height="auto" alt="image" src="https://github.com/user-attachments/assets/c11a1d94-9b56-419a-93df-5a6a43ec00c1" />
 >
 > - These variables control the visibility of small UI elements that show up on phones and small screens.
-> 	```css
-> 	:root{
-> 	  --miniOverlayButtonVisibility: block; /* block: show the mini play or three-dot button on cards on mobile [default]; none: always hide them on mobile */
-> 	  --endsAtVisibility: block; /* block: show the 'Ends at...' time indicator on phones [default]; none: always hide it on phones */
-> 	  --criticsRatingVisibility: none; /* none: hide the critics tomato rating on phones [default]; block: show it on phones */
-> 	}
-> 	```
+>     ```css
+>     :root {
+>         --miniOverlayButtonVisibility: block; /* block: show the mini play or three-dot button on cards on mobile [default]; none: always hide them on mobile */
+>         --endsAtVisibility: block; /* block: show the 'Ends at...' time indicator on phones [default]; none: always hide it on phones */
+>         --criticsRatingVisibility: none; /* none: hide the critics tomato rating on phones [default]; block: show it on phones */
+>     }
+>     ```
 > - To undo these changes, simply remove the variables you added or set the values back to their defaults shown above.
- 
+
 </details>
 
 <details>
@@ -364,28 +364,28 @@ https://github.com/user-attachments/assets/bb7f3174-b703-4c98-a23c-e6bb4abba390
 >
 > - Star rating icon in ElegantFin uses the TMDB colors by default, since that is where the rating is sourced from.
 > - To switch them to the gold IMDb colors, copy and paste the following code at the end in Custom CSS box, click save and finally refresh your app/webpage.
-> 	```css
-> 	.starIcon{
-> 	    --colors: var(--imdb);
-> 	}
-> 	```
+>     ```css
+>     .starIcon {
+>         --colors: var(--imdb);
+>     }
+>     ```
 > - To go back to the TMDB colors, replace `var(--imdb)` with `var(--tmdb)` or simply remove the code block.
- 
+
 </details>
 
 <details>
   <summary><i>15. Switch between Light and Dark modes</i></summary>
 
-|Desktop|Mobile|
-|---|---|
-|<div align="center"><img src="https://github.com/user-attachments/assets/3483bca2-bc5f-4444-a815-51b27a38c4eb"><br><strong>Dark</strong></div>|<div align="center"><img src="https://github.com/user-attachments/assets/f3c9d4e2-7e72-498e-ad3b-d1db0fcecd19"></div>
-|<div align="center"><img src="https://github.com/user-attachments/assets/a300fc79-c2c4-40bd-a18b-c0a45e381082"><br><strong>Light</strong></div>|<div align="center"><img src="https://github.com/user-attachments/assets/9f1d80df-dcdb-4088-a3e6-15ed4209f3ee"></div>|
+| Desktop                                                                                                                                         | Mobile                                                                                                                |
+| ----------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
+| <div align="center"><img src="https://github.com/user-attachments/assets/3483bca2-bc5f-4444-a815-51b27a38c4eb"><br><strong>Dark</strong></div>  | <div align="center"><img src="https://github.com/user-attachments/assets/f3c9d4e2-7e72-498e-ad3b-d1db0fcecd19"></div> |
+| <div align="center"><img src="https://github.com/user-attachments/assets/a300fc79-c2c4-40bd-a18b-c0a45e381082"><br><strong>Light</strong></div> | <div align="center"><img src="https://github.com/user-attachments/assets/9f1d80df-dcdb-4088-a3e6-15ed4209f3ee"></div> |
 
 > - ElegantFin now comes with a dark by default, but an alternative light mode is also available
 > - To switch between these modes, go to `User Settings > Display > Theme` and select either **Dark** or **Light**.
 > - The "Theme" setting above is **not** to be confused with the "Server Dashboard Theme" in the Dashboard, which is **not supported**.
 > - Only the Light and Dark theme options are supported, and Jellyfin does not automatically switch between them, so you have to change it manually.
- 
+
 </details>
 
 <hr>
@@ -425,7 +425,7 @@ https://github.com/user-attachments/assets/bb7f3174-b703-4c98-a23c-e6bb4abba390
   <summary>3️⃣ - <i>Why do I notice visual bugs and inconsistencies on Jellyfin Media Player?</i></summary>
  
 > - JMP is based on Qt 5.x which uses a very outdated web engine. It does not support many new CSS features, so it is unsupported.
-> - You might want to try [Jellium Desktop](https://github.com/andrewrabert/jellium-desktop)) which is an unofficial client, and it is still in testing right now.
+> - You might want to try [Jellium Desktop](https://github.com/andrewrabert/jellium-desktop) which is an unofficial client, and it is still in testing right now.
  
 </details>
 
